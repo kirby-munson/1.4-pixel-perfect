@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  background: #fff url('images/surf_header.jpeg') no-repeat;
+  background-size: cover;
+  height: 523px;
+  position: relative; /*for absolutly pos children*/
+}
+
+header:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(50, 108, 174, 0.5);
+}
+
+header nav,
+header h1,
+header h3,{
+  position: relative;
+}
+
+header h1, header h3 {
+  text-align: center;
+  margin: 10px auto;
+  font-family: 'open sans', sans-serif;
+  color: white;
+}
+
+header h1 {
+  font-size: 100px;
+}
+
+.utility_nav {
+  font-family: "open sans", serif;
+}
+
+.branding {
+  font-family: "open sans", serif;
+}
