@@ -91,13 +91,17 @@ float: left;
 
 /* body */
 
-section .body {
+.body section {
   height: 1008px;
-  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid black;
 }
-section .content {
+
+.content {
   height: 1008px;
-  width: 46%;
+  width: 69%;
+  float: left;
+  display: inline-block;
 }
 
 p {
@@ -134,20 +138,10 @@ span .paddle {
 
 /* body */
 
-.body h1 {
+.content h1 {
   font-family: "oswald", sans-serif;
   font-size: 65px;
   color: #063452;
-}
-
-.body {
-  margin: 0 0;
-}
-
-.content {
-  margin: 0 auto;
-  float: left;
-  padding: 63px 161px;
 }
 
 .content img {
@@ -188,7 +182,7 @@ span .paddle {
   float: right;
 }
 
-.profile {
+.profile section{
   height: 300px;
   margin: 22% 0 0 -220px;
 }
@@ -287,4 +281,32 @@ span .paddle {
   text-transform: uppercase;
   margin: 50px 13px 12px -60px;
 
+}
+
+.clear_fix {
+  clear: both;
+}
+
+.bottom section {
+  border: 5px solid white;
+}
+
+.bottom img {
+  height: 330px;
+  width: 325px;
+  margin: -2px;
+}
+
+.bottom h1{
+  font-family: 'oswald', sans-serif;
+  font-size: 100px;
+  text-align: center;
+}
+
+nav {
+  float: right;
+}
+
+li {
+  display: inline;
 }
