@@ -1,3 +1,6 @@
+
+/* whole page */
+
 html {
   box-sizing: border-box;
 }
@@ -6,6 +9,8 @@ html {
   max-width: 1300px;
   margin: 0 auto;
 }
+
+/* header */
 
 header {
   background: #fff url('images/surf_header.jpeg') no-repeat;
@@ -24,23 +29,26 @@ header:before{
   background-color: rgba(50, 108, 174, 0.5);
 }
 
-header nav,
-header h1,
-header h3{
+header nav {
   position: relative;
 }
 
-header h1, header h3 {
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'open sans', sans-serif;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+header h3 {
   text-align: center;
   margin: 10px auto;
   font-family: 'open sans', sans-serif;
   color: white;
   font-weight: bold;
-}
-
-.header h1 {
-  font-size: 100px;
-  margin:142px -4px 5px 1px;
+  position: relative;
 }
 
 .branding span {
@@ -88,27 +96,6 @@ float: left;
   margin:2px -7px 1px 11px;
 }
 
-
-/* body */
-
-.body section {
-  height: 1008px;
-  max-width: 100%;
-  border-bottom: 1px solid black;
-}
-
-.content {
-  height: 1008px;
-  width: 69%;
-  float: left;
-  display: inline-block;
-}
-
-p {
-  width: 650px;
-  display: inline-block;
-}
-
 span .surf {
   letter-spacing: 0;
   padding: 0 0 0 -3px;
@@ -136,7 +123,28 @@ span .paddle {
   padding: 9px;
 }
 
-/* body */
+
+/* entire body */
+
+.body section {
+  height: 1008px;
+  max-width: 100%;
+  border-bottom: 1px solid black;
+}
+
+/* left side of body */
+
+.content {
+  height: 1008px;
+  width: 65%;
+  float: left;
+  display: inline-block;
+}
+
+p {
+  width: 650px;
+  display: inline-block;
+}
 
 .content h1 {
   font-family: "oswald", sans-serif;
@@ -166,6 +174,16 @@ span .paddle {
   padding: 20px;
 }
 
+/* right side of the body */
+
+.right_side {
+  display: inline-block;
+  height: 1008px;
+  width: 35%;
+  float: right;
+}
+
+/* profile portion */
 
 .profile img {
   height: 84px;
@@ -175,16 +193,10 @@ span .paddle {
   margin: 0 auto;
 }
 
-.right_side {
+div.profile {
   display: inline-block;
-  height: 1008px;
-  width: 29%;
-  float: right;
-}
-
-.profile section{
-  height: 300px;
-  margin: 22% 0 0 -220px;
+  height: 250px;
+  width: 100%;
 }
 
 .profile a {
@@ -210,7 +222,7 @@ span .paddle {
 }
 
 .media {
-  max-width: 233px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -223,43 +235,53 @@ span .paddle {
   color:#ADBAC5;
 }
 
-.side_photo img {
-  height: 300px;
-  width:277px;
-  margin:-113px -95px 20px -62px;
-}
+/* side photo */
 
 .side_photo{
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  height: 350px;
+  width: 100%;
 }
 
-.side_photo:after {
-  content:'';
-  top: 0px;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
+.overlay_box img {
+  height: 300px;
+  width:277px;
   display: inline;
+  max-width: 100%;
+}
+
+div.overlay_box {
+  height: 300px;
+  width:277px;
+}
+
+div.overlay_box:after {
+  content:'';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 277px;
+  height: 300px;
+  display: inline-block;;
   position: absolute;
   background-color: rgba(50, 108, 174, 0.5);
-  margin: -113px 0 0 -62px;
-  padding: 31px 31px 59px 31px;
 }
 
 .side_photo a {
   font-family: 'open sans', sans-serif;
   color: #ADBAC5;
   font-size: 14px;
-  letter-spacing: -.5px;
-  margin: 0 0 0 7px;
-  padding: 0;
+  display: block;
 }
 
+/* section paragraph */
+
 .section_heading {
-  margin: 9px 13px 13px -61px;
-  padding: 41px 0 0 0;
+  width: 100%;
+  height: 250px;
 }
 
 .side_heading p {
@@ -267,7 +289,6 @@ span .paddle {
   font-size: 14px;
   font-family: 'open sans', sans-serif;
   line-height: 23px;
-  margin: -3px 7px 5px -62px;
   float: left;
   max-width: 265px;
   text-align: left;
@@ -279,7 +300,6 @@ span .paddle {
   color: #1970B2;
   font-size: 17px;
   text-transform: uppercase;
-  margin: 50px 13px 12px -60px;
 
 }
 
@@ -287,21 +307,55 @@ span .paddle {
   clear: both;
 }
 
-.bottom section {
-  border: 5px solid white;
+/* bottom section */
+
+.square_photos{
+  display: inline;
 }
 
-.bottom img {
+.box img {
   height: 330px;
   width: 325px;
   margin: -2px;
 }
+
+.box {
+  display: inline;
+  vertical-align: top;
+  height: 330px;
+  width: 325px;
+  margin: -2px;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+}
+
+.overlay:hover:after  {
+  opacity: 1;
+  background-color: rgba(50, 108, 174, 0.5);
+  height: 330px;
+  width: 325px;
+}
+
 
 .bottom h1{
   font-family: 'oswald', sans-serif;
   font-size: 100px;
   text-align: center;
 }
+
+/* footer */
 
 nav {
   float: right;
