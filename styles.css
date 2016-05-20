@@ -14,7 +14,7 @@ header {
   position: relative; /*for absolutly pos children*/
 }
 
-header:after{
+header:before{
   content: "";
   position: absolute;
   top: 0;
@@ -26,7 +26,7 @@ header:after{
 
 header nav,
 header h1,
-header h3,{
+header h3{
   position: relative;
 }
 
@@ -35,16 +35,256 @@ header h1, header h3 {
   margin: 10px auto;
   font-family: 'open sans', sans-serif;
   color: white;
+  font-weight: bold;
 }
 
-header h1 {
+.header h1 {
   font-size: 100px;
+  margin:142px -4px 5px 1px;
 }
 
-.utility_nav {
-  font-family: "open sans", serif;
+.branding span {
+  line-height: 64px;
+  vertical-align: top;
+  margin: 9px -5px;
 }
 
 .branding {
   font-family: "open sans", serif;
+float: left;
+}
+
+.float_fix {
+  clear:  both;
+}
+
+.logo {
+  height:45px;
+  width:45px;
+  margin: 10px 15px 13px 141px;
+}
+
+.utility_nav {
+  font-family: "oswald", serif;
+  float: right;
+  margin: 20px 171px 18px 26px;
+}
+
+.utility_nav a{
+  text-decoration: none;
+  margin: 0 -9px 1px 7px;
+  font-size: 18px;
+  padding: 0 5px 0 0;
+  color: #063452;
+}
+
+.utility_nav a:hover {
+  color: white;
+}
+
+.utility_nav img {
+  height: 15px;
+  width: 15px;
+  margin:2px -7px 1px 11px;
+}
+
+
+/* body */
+
+section .body {
+  height: 1008px;
+  width: 100%;
+}
+section .content {
+  height: 1008px;
+  width: 46%;
+}
+
+p {
+  width: 650px;
+  display: inline-block;
+}
+
+span .surf {
+  letter-spacing: 0;
+  padding: 0 0 0 -3px;
+}
+
+span .and {
+  letter-spacing: -6px;
+}
+
+span .paddle {
+  letter-spacing: normal;
+}
+
+.little_surf {
+  letter-spacing: normal;
+}
+
+.little_paddle {
+  letter-spacing: normal;
+  padding: 6px;
+}
+
+.search {
+  letter-spacing: 0;
+  padding: 9px;
+}
+
+/* body */
+
+.body h1 {
+  font-family: "oswald", sans-serif;
+  font-size: 65px;
+  color: #063452;
+}
+
+.body {
+  margin: 0 0;
+}
+
+.content {
+  margin: 0 auto;
+  float: left;
+  padding: 63px 161px;
+}
+
+.content img {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+.caption {
+  margin: 10px;
+}
+
+.caption span {
+  line-height: 22px;
+  vertical-align: top;
+  font-family: times, sans-serif;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.content p {
+  padding: 20px;
+}
+
+
+.profile img {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.right_side {
+  display: inline-block;
+  height: 1008px;
+  width: 29%;
+  float: right;
+}
+
+.profile {
+  height: 300px;
+  margin: 22% 0 0 -220px;
+}
+
+.profile a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'open sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px;
+  color: #1970B2;
+}
+
+.profile a:hover {
+  color: #063452;
+}
+
+.profile span {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.media {
+  max-width: 233px;
+  margin: 0 auto;
+}
+
+.media span {
+  margin: 0 auto;
+  font-family: 'open sans', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: -19px 11px 11px -9px;
+  color:#ADBAC5;
+}
+
+.side_photo img {
+  height: 300px;
+  width:277px;
+  margin:-113px -95px 20px -62px;
+}
+
+.side_photo{
+  display: inline-block;
+  position: relative;
+}
+
+.side_photo:after {
+  content:'';
+  top: 0px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: inline;
+  position: absolute;
+  background-color: rgba(50, 108, 174, 0.5);
+  margin: -113px 0 0 -62px;
+  padding: 31px 31px 59px 31px;
+}
+
+.side_photo a {
+  font-family: 'open sans', sans-serif;
+  color: #ADBAC5;
+  font-size: 14px;
+  letter-spacing: -.5px;
+  margin: 0 0 0 7px;
+  padding: 0;
+}
+
+.section_heading {
+  margin: 9px 13px 13px -61px;
+  padding: 41px 0 0 0;
+}
+
+.side_heading p {
+  display: inline;
+  font-size: 14px;
+  font-family: 'open sans', sans-serif;
+  line-height: 23px;
+  margin: -3px 7px 5px -62px;
+  float: left;
+  max-width: 265px;
+  text-align: left;
+
+}
+
+.side_heading h3 {
+  font-family: 'oswald', sans-serif;
+  color: #1970B2;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 50px 13px 12px -60px;
+
 }
